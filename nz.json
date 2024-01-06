@@ -3,8 +3,8 @@
     "name": "官方(改)",
     "version": 183,
     "author": "nz",
-    "supportUri": "https://github.com/nz",
-    "checkUpdateUrl": "https://registry.npmmirror.com/@gkd-kit/subscription/latest/files/dist/gkd.version.json",
+    "supportUri": "https://github.com/nanzhinet/nzjson",
+    "checkUpdateUrl": "https://gh.api.99988866.xyz/https://raw.githubusercontent.com/nanzhinet/nzjson/main/nz.json",
     "globalGroups": [
         {
             "name": "开屏广告",
