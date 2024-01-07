@@ -35959,7 +35959,7 @@
             "name": "作业精灵",
             "groups": [
                 {
-                    "name": "弹窗广告",
+                    "name": "弹窗广告-全屏广告",
                     "key": 6,
                     "desc": "腾讯广告SDK",
                     "enable": false,
