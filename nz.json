@@ -2348,7 +2348,25 @@
                             ]
                         }
                     ]
-                }
+                },
+                {
+      name: '关闭可能认识',
+      key: 22,
+      "enable": false,
+      activityIds: [
+        'com.tencent.mobileqq.activity.SplashActivity'
+      ],
+      rules: [
+        {
+          matches: [
+            '[id="com.tencent.mobileqq:id/bfl"]'
+          ],
+          snapshotUrls: [
+            'https://i.gkd.li/import/13747737'
+          ]
+        }
+      ]
+    }
             ]
         },
         {
@@ -35959,7 +35977,7 @@
             "name": "作业精灵",
             "groups": [
                 {
-                    "name": "弹窗广告-全屏广告",
+                    "name": "弹窗广告",
                     "key": 6,
                     "desc": "腾讯广告SDK",
                     "enable": false,
