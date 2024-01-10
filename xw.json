@@ -1,10 +1,10 @@
 {
-id:1,
+id:9,
 name:'小王订阅',
 version:027,
 author:'小王',
-supportUri:'https://nazhw.com',
-checkUpdateUrl:'https://nz.nazhw.com/1.json',
+supportUri:'https://github.com/nanzhinet/',
+checkUpdateUrl:'https://gh.api.99988866.xyz/https://raw.githubusercontent.com/nanzhinet/nzjson/main/xw.json',
 apps:[
 {
   id: 'com.clover.daysmatter',
