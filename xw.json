@@ -1,0 +1,222 @@
+{
+id:1,
+name:'小王订阅',
+version:027,
+author:'小王',
+supportUri:'https://nazhw.com',
+checkUpdateUrl:'https://nz.nazhw.com/1.json',
+apps:[
+{
+  id: 'com.clover.daysmatter',
+  name: '倒数日',
+  groups: [
+    {
+      key: 0,
+      name: '版权首页弹窗',
+      activityIds: ['com.clover.daysmatter.ui.activity.SyncInitActivity'],
+      rules: [
+        {
+          matches: '[id="com.clover.daysmatter:id/image_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13700964',
+        },
+      ],
+    },
+    {
+      enable:false,
+      key: 1,
+      name: '暂无',
+      activityIds: [''],
+      rules: [
+        {
+          matches: '[id="com.clover.daysmatter:id/image_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13700964',
+        },
+      ],
+    },
+  ],
+},
+{
+  id: 'com.yiyou.ga',
+  name: 'TT语音',
+  groups: [
+    {
+      key: 0,
+      name: '开屏广告',
+      activityIds: ['com.yiyou.ga.client.BlankActivity'],
+      rules: [
+        {
+          matches: '[text.length<=10][text*="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/import/13702449',
+        },
+      ],
+    },
+    {
+      enable:false,
+      key: 1,
+      name: '顶部广告',
+      activityIds: ['com.yiyou.ga.client.home.HomeActivity'],
+      rules: [
+        {
+          matches: '[id="com.yiyou.ga:id/tt_return_adv_close"][name="android.widget.LinearLayout"]',
+          snapshotUrls: 'https://i.gkd.li/import/13702828',
+        },
+      ],
+    },
+  ],
+},
+{
+  id: 'com.wn.app.np',
+  name: 'np管理器',
+  groups: [
+    {
+      key: 0,
+      name: '开屏广告',
+      activityIds: ['player.normal.np.activity.SplashActivity'],
+      rules: [
+        {
+          matches: '[text="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/import/13702997',
+        },
+      ],
+    },
+    {
+      enable:false,
+      key: 2,
+      name: '暂无',
+      activityIds: [''],
+      rules: [
+        {
+          matches: '[id="com.clover.daysmatter:id/image_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13700964',
+        },
+      ],
+    },
+  ],
+},
+{
+  id: 'com.kwai.m2u',
+  name: '一甜相机',
+  groups: [
+    {
+      key: 0,
+      name: '开屏广告弹窗',
+      activityIds: ['com.kwai.m2u.main.CameraActivity'],
+      rules: [
+        {
+          matches: '[text*="跳过"]',
+          snapshotUrls: 'https://i.gkd.li/import/13703981',
+        },
+      ],
+    },
+    {
+      enable:false,
+      key: 1,
+      name: '暂无',
+      activityIds: [''],
+      rules: [
+        {
+          matches: '[id="com.clover.daysmatter:id/image_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13700964',
+        },
+      ],
+    },
+  ],
+},
+{
+  id: 'com.android.packageinstaller',
+  name: 'vivo安装',
+  groups: [
+    {
+      key: 0,
+      enable:false,
+      name: '自动安装',
+      activityIds: ['com.android.packageinstaller.PackageInstallerActivity','com.android.packageinstaller.NewInstallInstalling'],
+      rules: [
+        {
+          matches: '[text="继续安装"]',
+          snapshotUrls: ['https://i.gkd.li/import/13710813',"https://i.gkd.li/import/13710952"],
+        },
+             {
+                            preKeys: 0,
+                            key: 1,
+                            name: 'android.widget.Button',
+                            matches: '[id="com.android.packageinstaller:id/done_button"][text="完成"]',
+                            snapshotUrls: [
+                                'https://i.gkd.li/import/13710864'
+                            ]
+             },
+      ],
+    },
+    {
+      enable:false,
+      key: 1,
+      name: '暂无',
+      activityIds: [''],
+      rules: [
+        {
+          matches: '[id="com.clover.daysmatter:id/image_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13700964',
+        },
+      ],
+    },
+  ],
+},
+{
+  id: 'tv.danmaku.bili',
+  name: '哔哩哔哩',
+  groups: [
+    {
+      key: 0,
+      name: '不感兴趣',
+      activityIds: ['tv.danmaku.bili.MainActivityV2'],
+      rules: [
+        {
+          matches: '[text="不感兴趣"]',
+          snapshotUrls: 'https://i.gkd.li/import/13721769',
+        },
+      ],
+    },
+    {
+      enable:false,
+      key: 2,
+      name: '暂无',
+      activityIds: [''],
+      rules: [
+        {
+          matches: '[id="com.clover.daysmatter:id/image_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13700964',
+        },
+      ],
+    },
+  ],
+},
+{
+  id: 'com.tencent.mtt',
+  name: 'QQ浏览器',
+  groups: [
+    {
+      key: 0,
+      name: '不感兴趣',
+      activityIds: ['com.tencent.mtt.hippy.qb.views.modal.HippyQBModalHostView$1','com.tencent.mtt.MainActivity'],
+      rules: [
+        {
+          matches: '[desc="直接关闭"||desc="关闭此广告"][name="android.view.View"]',
+          snapshotUrls: ['https://i.gkd.li/import/13722162','https://i.gkd.li/import/13722394'],
+        },
+      ],
+    },
+    {
+      enable:false,
+      key: 2,
+      name: '暂无',
+      activityIds: [''],
+      rules: [
+        {
+          matches: '[id="com.clover.daysmatter:id/image_close"]',
+          snapshotUrls: 'https://i.gkd.li/import/13700964',
+        },
+      ],
+    },
+  ],
+},
+]}
